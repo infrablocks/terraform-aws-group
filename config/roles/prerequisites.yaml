@@ -1,0 +1,9 @@
+---
+source_directory: "spec/infra/prerequisites"
+state_file: "%{hiera('project_directory')}/state/prerequisites.tfstate"
+vars:
+  region: "%{hiera('region')}"
+
+  user_name_1: "test-1-%{hiera('deployment_identifier')}"
+  user_name_2: "test-2-%{hiera('deployment_identifier')}"
+  user_name_3: "test-3-%{hiera('deployment_identifier')}"
